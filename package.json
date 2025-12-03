@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc && cd frontend && npm install && npm run build",
+    "build": "tsc",
     "start": "node dist/server.js",
     "dev": "nodemon src/server.ts",
     "seed": "ts-node src/seed.ts",
