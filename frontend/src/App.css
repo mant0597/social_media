@@ -1,0 +1,218 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fafafa;
+    color: #262626;
+    margin: 0;
+}
+
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 245px;
+    border-right: 1px solid #dbdbdb;
+    background: white;
+    padding: 20px;
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    padding-left: 10px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.nav-item:hover {
+    background-color: #f2f2f2;
+}
+
+.nav-item span {
+    margin-left: 15px;
+}
+
+.main-content {
+    margin-left: 245px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.feed-container {
+    width: 100%;
+    max-width: 470px;
+}
+
+.post-card {
+    background: white;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.post-header {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #efefef;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #eee;
+    margin-right: 10px;
+}
+
+.username {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.post-content {
+    padding: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.post-actions {
+    padding: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.action-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.likes-count {
+    padding: 0 10px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.timestamp {
+    padding: 0 10px 10px;
+    font-size: 0.7rem;
+    color: #8e8e8e;
+    text-transform: uppercase;
+}
+
+/* Notifications */
+.notifications-container {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.notification-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #efefef;
+}
+
+.btn-accept {
+    background: #0095f6;
+    color: white;
+    border: none;
+    padding: 7px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.btn-reject {
+    background: #efefef;
+    color: black;
+    border: none;
+    padding: 7px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Profile */
+.profile-header {
+    display: flex;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #dbdbdb;
+    padding-bottom: 40px;
+}
+
+.profile-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #eee;
+    margin-right: 100px;
+    margin-left: 50px;
+}
+
+.profile-info h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 0 0 20px;
+}
+
+.profile-stats {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.stat-count {
+    font-weight: 600;
+}
+
+.btn-follow {
+    background: #0095f6;
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-block {
+    background: transparent;
+    color: #ed4956;
+    border: 1px solid #dbdbdb;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 10px;
+}
